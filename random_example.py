@@ -15,7 +15,16 @@ print( f'{my_rand2} vs {my_rand3}')
 my_rand4 = random.randrange(10) + 1
 print(my_rand4)
 
-# TODO: figure out the difference between rand2 and rand3
+
+"""
+
+randint enables a result to be the biggest value while randrange can output only max-1 biggest value
 
 
-# TODO: how is rand4 different from my_rand?
+
+
+
+"""
+
+
+print(random.randrange(0,2)+1)

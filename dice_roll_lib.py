@@ -7,55 +7,36 @@ import random
 
 
 def flip_a_coin():
-    """
-    this flips a 2-sided coin
-    return 0 for tails
-    return 1 for heads
-    """
-    return -1
+    return random.randint(0,1)
 
 def roll_d4():
-    """
-    this rolls a 4-sided die and returns the value
-    """
-    return 0
+    return random.randint(1,4)
 
 def roll_d6():
-    """
-    this rolls a 6-sided die and returns the value
-    """
-    return 0
+    return random.randint(1,6)
 
 def roll_d8():
-    """
-    this rolls an 8-sided die and returns the value
-    """
-    return 0
+    return random.randint(1,8)
 
 def roll_d10():
-    """
-    this rolls a 10-sided die and returns the value
-    """
-    return 0
+    return random.randint(1,10)
 
 def roll_d12():
-    """
-    this rolls a 12-sided die and returns the value
-    """
-    return 0
+    return random.randint(1,12)
 
 def roll_n_sided_die(n):
-    """
-    this rolls an n-sided die and returns the value
-    """
-    return 0
+    return random.randint(1,n)
 
 def roll_multiple_n_sided_dice(number_of_dice, n):
     """
     This will roll several n-sided die.  How many dice to roll is
     given by "number_of_dice" and n is the number of sides for
     each die.
-    
+
     return the total sum of all these dice
     """
-    return 0
+    sum = 0
+    for i in range(int(number_of_dice)):
+        roll = random.randint(1,n)
+        sum = sum + roll
+    return sum
